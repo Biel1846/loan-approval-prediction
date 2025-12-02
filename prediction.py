@@ -1,13 +1,4 @@
-"""Prediction helper for the Streamlit app.
-
-This file avoids failing silently on import when dependencies are missing —
-we provide a clear runtime error message if `joblib` isn't installed.
-"""
-
-try:
-    import joblib
-except Exception:
-    joblib = None
+import joblib
 
 
 def predict(data):
